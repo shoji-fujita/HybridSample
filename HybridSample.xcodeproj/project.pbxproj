@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		CEC60E0E207A7FB100242944 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC60E0D207A7FB100242944 /* AppDelegate.swift */; };
-		CEC60E10207A7FB100242944 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC60E0F207A7FB100242944 /* ViewController.swift */; };
 		CEC60E13207A7FB100242944 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC60E11207A7FB100242944 /* Main.storyboard */; };
 		CEC60E15207A7FB100242944 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEC60E14207A7FB100242944 /* Assets.xcassets */; };
 		CEC60E18207A7FB100242944 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC60E16207A7FB100242944 /* LaunchScreen.storyboard */; };
+		CEC60E20207A7FC200242944 /* NativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC60E1F207A7FC200242944 /* NativeViewController.swift */; };
+		CEC60E22207A7FD800242944 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC60E21207A7FD800242944 /* WebViewController.swift */; };
+		CEC60E24207A7FF600242944 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC60E23207A7FF600242944 /* Extensions.swift */; };
+		CEC60E28207A809800242944 /* NativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC60E27207A809800242944 /* NativeViewController.storyboard */; };
+		CEC60E2B207A81AE00242944 /* js.js in Resources */ = {isa = PBXBuildFile; fileRef = CEC60E2A207A81AE00242944 /* js.js */; };
+		CEC60E2D207A824E00242944 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = CEC60E29207A81AE00242944 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CEC60E0A207A7FB100242944 /* HybridSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HybridSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC60E0D207A7FB100242944 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CEC60E0F207A7FB100242944 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CEC60E12207A7FB100242944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CEC60E14207A7FB100242944 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CEC60E17207A7FB100242944 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CEC60E19207A7FB100242944 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEC60E1F207A7FC200242944 /* NativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeViewController.swift; sourceTree = "<group>"; };
+		CEC60E21207A7FD800242944 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		CEC60E23207A7FF600242944 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		CEC60E27207A809800242944 /* NativeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NativeViewController.storyboard; sourceTree = "<group>"; };
+		CEC60E29207A81AE00242944 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		CEC60E2A207A81AE00242944 /* js.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = js.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +65,26 @@
 			isa = PBXGroup;
 			children = (
 				CEC60E0D207A7FB100242944 /* AppDelegate.swift */,
-				CEC60E0F207A7FB100242944 /* ViewController.swift */,
+				CEC60E2C207A820000242944 /* WebPage */,
+				CEC60E1F207A7FC200242944 /* NativeViewController.swift */,
+				CEC60E21207A7FD800242944 /* WebViewController.swift */,
+				CEC60E27207A809800242944 /* NativeViewController.storyboard */,
+				CEC60E23207A7FF600242944 /* Extensions.swift */,
 				CEC60E11207A7FB100242944 /* Main.storyboard */,
 				CEC60E14207A7FB100242944 /* Assets.xcassets */,
 				CEC60E16207A7FB100242944 /* LaunchScreen.storyboard */,
 				CEC60E19207A7FB100242944 /* Info.plist */,
 			);
 			path = HybridSample;
+			sourceTree = "<group>";
+		};
+		CEC60E2C207A820000242944 /* WebPage */ = {
+			isa = PBXGroup;
+			children = (
+				CEC60E29207A81AE00242944 /* index.html */,
+				CEC60E2A207A81AE00242944 /* js.js */,
+			);
+			path = WebPage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +146,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEC60E28207A809800242944 /* NativeViewController.storyboard in Resources */,
 				CEC60E18207A7FB100242944 /* LaunchScreen.storyboard in Resources */,
 				CEC60E15207A7FB100242944 /* Assets.xcassets in Resources */,
+				CEC60E2D207A824E00242944 /* index.html in Resources */,
+				CEC60E2B207A81AE00242944 /* js.js in Resources */,
 				CEC60E13207A7FB100242944 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,8 +162,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC60E10207A7FB100242944 /* ViewController.swift in Sources */,
+				CEC60E24207A7FF600242944 /* Extensions.swift in Sources */,
+				CEC60E20207A7FC200242944 /* NativeViewController.swift in Sources */,
 				CEC60E0E207A7FB100242944 /* AppDelegate.swift in Sources */,
+				CEC60E22207A7FD800242944 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

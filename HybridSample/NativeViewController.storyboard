@@ -1,7 +1,79 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
-    </dependencies>
-    <scenes/>
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="j9d-Mu-xO2">
+<device id="retina4_7" orientation="portrait">
+<adaptation id="fullscreen"/>
+</device>
+<dependencies>
+<deployment identifier="iOS"/>
+<plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+<capability name="Safe area layout guides" minToolsVersion="9.0"/>
+<capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+</dependencies>
+<scenes>
+<!--Native View Controller-->
+<scene sceneID="6qJ-yz-7IM">
+<objects>
+<viewController id="j9d-Mu-xO2" customClass="NativeViewController" customModule="LocalWebviewExample" customModuleProvider="target" sceneMemberID="viewController">
+<view key="view" contentMode="scaleToFill" id="9y3-cl-tF1">
+<rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+<autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+<subviews>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Native" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EGD-f5-TFC">
+<rect key="frame" x="15" y="20" width="360" height="70"/>
+<constraints>
+<constraint firstAttribute="height" constant="70" id="IYq-ag-GV3"/>
+</constraints>
+<fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQH-Gx-4Qq">
+<rect key="frame" x="15" y="120" width="92" height="45"/>
+<state key="normal" title="ホーム画面へ"/>
+<connections>
+<action selector="tappedHomeButton:" destination="j9d-Mu-xO2" eventType="touchUpInside" id="ai3-Aq-tEt"/>
+</connections>
+</button>
+<button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LDq-Bp-aH9">
+<rect key="frame" x="15" y="165" width="77" height="45"/>
+<constraints>
+<constraint firstAttribute="height" constant="45" id="0TO-Sy-GFj"/>
+</constraints>
+<state key="normal" title="設定画面へ"/>
+<connections>
+<action selector="tappedSettingButton:" destination="j9d-Mu-xO2" eventType="touchUpInside" id="cXy-Yq-uhK"/>
+</connections>
+</button>
+<label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is メニュー画面" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FyL-sG-bVS">
+<rect key="frame" x="15" y="90" width="140" height="30"/>
+<constraints>
+<constraint firstAttribute="height" constant="30" id="Tw4-NS-Yq9"/>
+</constraints>
+<fontDescription key="fontDescription" type="system" pointSize="15"/>
+<nil key="textColor"/>
+<nil key="highlightedColor"/>
+</label>
+</subviews>
+<color key="backgroundColor" red="0.82144450660000001" green="1" blue="0.87900922940000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+<constraints>
+<constraint firstItem="dQH-Gx-4Qq" firstAttribute="top" secondItem="FyL-sG-bVS" secondAttribute="bottom" id="0DU-xS-PqC"/>
+<constraint firstItem="FEw-vZ-e0z" firstAttribute="trailing" secondItem="EGD-f5-TFC" secondAttribute="trailing" id="4um-tX-4Ao"/>
+<constraint firstItem="FyL-sG-bVS" firstAttribute="top" secondItem="EGD-f5-TFC" secondAttribute="bottom" id="IBA-e5-uBL"/>
+<constraint firstItem="EGD-f5-TFC" firstAttribute="top" secondItem="FEw-vZ-e0z" secondAttribute="top" id="MPP-sT-oUg"/>
+<constraint firstItem="dQH-Gx-4Qq" firstAttribute="height" secondItem="LDq-Bp-aH9" secondAttribute="height" id="WQy-IU-LDP"/>
+<constraint firstItem="LDq-Bp-aH9" firstAttribute="top" secondItem="dQH-Gx-4Qq" secondAttribute="bottom" id="aaS-61-7hH"/>
+<constraint firstItem="LDq-Bp-aH9" firstAttribute="top" secondItem="dQH-Gx-4Qq" secondAttribute="bottom" id="fE1-iK-Yl7"/>
+<constraint firstItem="EGD-f5-TFC" firstAttribute="leading" secondItem="FEw-vZ-e0z" secondAttribute="leading" constant="15" id="hMS-HE-5fc"/>
+<constraint firstItem="FyL-sG-bVS" firstAttribute="leading" secondItem="EGD-f5-TFC" secondAttribute="leading" id="tV6-ef-San"/>
+<constraint firstItem="dQH-Gx-4Qq" firstAttribute="leading" secondItem="EGD-f5-TFC" secondAttribute="leading" id="woJ-EV-RXl"/>
+<constraint firstItem="LDq-Bp-aH9" firstAttribute="leading" secondItem="dQH-Gx-4Qq" secondAttribute="leading" id="zri-Wy-U9i"/>
+</constraints>
+<viewLayoutGuide key="safeArea" id="FEw-vZ-e0z"/>
+</view>
+</viewController>
+<placeholder placeholderIdentifier="IBFirstResponder" id="ke4-e5-uAg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+</objects>
+<point key="canvasLocation" x="92" y="55.322338830584712"/>
+</scene>
+</scenes>
 </document>
